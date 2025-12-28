@@ -1,0 +1,126 @@
+{
+  "panelists": [
+    {
+      "id": "1",
+      "name": "Harisha",
+      "email": "harisha@example.com",
+      "phone": "9160011711",
+      "linkedin": "",
+      "status": "active",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Keerthi",
+      "email": "Keerthisohana61@gmail.com",
+      "phone": "6303811927",
+      "linkedin": "https://www.linkedin.com/in/keerthi-sohana-atluri/",
+      "status": "active",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "name": "Praveena",
+      "email": "praveena.in1234@gmail.com",
+      "phone": "8374559583",
+      "linkedin": "https://www.linkedin.com/in/praveena-atluri/",
+      "status": "active",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "name": "K Lakshmi Narayana",
+      "email": "kln29dec@gmail.com",
+      "phone": "9090509010",
+      "linkedin": "https://www.linkedin.com/in/k-lakshmi-narayana-54a504231?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "status": "active",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "name": "Sanchit Bajaj",
+      "email": "sanchit@example.com",
+      "phone": "9810330951",
+      "linkedin": "https://www.linkedin.com/in/bajajsanchit/",
+      "status": "active",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "name": "Vedashree Gadekar",
+      "email": "vedashreegadekar@gmail.com",
+      "phone": "7448187060",
+      "linkedin": "https://www.linkedin.com/in/vedashree-gadekar-b182b6218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "status": "active",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "7",
+      "name": "Ankush Kumar",
+      "email": "ankush@example.com",
+      "phone": "9123571823",
+      "linkedin": "https://www.linkedin.com/in/ankush-kumar-sde?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "status": "active",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "8",
+      "name": "Naveen kumar Bisai",
+      "email": "naveenkumarbisai@gmail.com",
+      "phone": "8374812006",
+      "linkedin": "https://in.linkedin.com/in/naveen-kumar-bisai-1b46bb103",
+      "status": "active",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "9",
+      "name": "Akriti Shukla",
+      "email": "akritishukla00@gmail.com",
+      "phone": "8827821159",
+      "linkedin": "https://www.linkedin.com/in/akriti-shukla11",
+      "status": "active",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "10",
+      "name": "Disha",
+      "email": "dishajindgar24@gmail.com",
+      "phone": "9888672023",
+      "linkedin": "https://www.linkedin.com/in/dishajindgar",
+      "status": "active",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "11",
+      "name": "Rithvik",
+      "email": "klsrithvik20@gmail.com",
+      "phone": "9573582328",
+      "linkedin": "https://www.linkedin.com/in/rithvik-kanna-192baa185?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "status": "active",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "interviews": []
+}

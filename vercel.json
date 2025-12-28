@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd server && npm install",
+  "functions": {
+    "server/server.js": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  }
+}

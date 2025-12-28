@@ -1,0 +1,56 @@
+.data-management {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-export,
+.btn-export-default,
+.btn-import {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #3b82f6;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn-export:hover,
+.btn-export-default:hover,
+.btn-import:hover {
+  background: #2563eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-export-default {
+  background: #10b981;
+}
+
+.btn-export-default:hover {
+  background: #059669;
+}
+
+.btn-import:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn-export,
+  .btn-import {
+    background: #3b82f6;
+  }
+
+  .btn-export:hover,
+  .btn-import:hover {
+    background: #2563eb;
+  }
+}
+

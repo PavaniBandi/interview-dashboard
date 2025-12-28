@@ -1,0 +1,496 @@
+.payment-report-container {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.report-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.date-selectors {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.selector-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.selector-group label {
+  font-weight: 500;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.selector {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.selector:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.summary-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.summary-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+.summary-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.summary-value {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.summary-card.profit-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.summary-card.profit-card h3 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.summary-card.profit-card .summary-value {
+  color: #ffffff;
+}
+
+.payment-details {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.payment-details h2 {
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.payment-table-container {
+  overflow-x: auto;
+}
+
+.payment-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payment-table th {
+  text-align: left;
+  padding: 12px;
+  background: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.payment-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #666;
+}
+
+.payment-table tr:hover {
+  background: #f9f9f9;
+}
+
+.panelist-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.panelist-info strong {
+  color: #333;
+  font-size: 1rem;
+}
+
+.panelist-info .email {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.count-cell {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.type-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.9rem;
+}
+
+.breakdown-type {
+  color: #666;
+}
+
+.breakdown-count {
+  color: #333;
+  font-weight: 500;
+}
+
+.no-breakdown {
+  color: #999;
+  font-style: italic;
+}
+
+.payment-cell {
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+.payment-cell strong {
+  color: #3b82f6;
+}
+
+.payment-table tfoot {
+  border-top: 2px solid #e0e0e0;
+}
+
+.payment-table tfoot td {
+  padding-top: 16px;
+  font-size: 1.1rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6b7280;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+@media (prefers-color-scheme: dark) {
+  .report-header h1 {
+    color: #fff;
+  }
+
+  .selector-group label {
+    color: #ccc;
+  }
+
+  .selector {
+    background: #2a2a2a;
+    border-color: #444;
+    color: #fff;
+  }
+
+  .summary-card {
+    background: #1a1a1a;
+    border-color: #333;
+  }
+
+  .summary-card h3 {
+    color: #ccc;
+  }
+
+  .payment-details {
+    background: #1a1a1a;
+    border-color: #333;
+  }
+
+  .payment-details h2 {
+    color: #fff;
+  }
+
+  .payment-table th {
+    background: #2a2a2a;
+    color: #fff;
+    border-bottom-color: #444;
+  }
+
+  .payment-table td {
+    color: #ccc;
+    border-bottom-color: #333;
+  }
+
+  .payment-table tr:hover {
+    background: #2a2a2a;
+  }
+
+  .panelist-info strong {
+    color: #fff;
+  }
+
+  .count-cell {
+    color: #fff;
+  }
+
+  .breakdown-count {
+    color: #fff;
+  }
+
+  .empty-state {
+    background: #2a2a2a;
+    color: #ccc;
+  }
+}
+
+.profit-summary-section {
+  margin-top: 32px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.profit-summary-section h2 {
+  margin: 0 0 24px 0;
+  font-size: 1.5rem;
+  color: #333;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 12px;
+}
+
+.profit-summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.profit-summary-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.profit-summary-card.pavani-card {
+  border-top: 4px solid #3498db;
+  background: linear-gradient(
+    135deg,
+    rgba(52, 152, 219, 0.05) 0%,
+    rgba(52, 152, 219, 0.02) 100%
+  );
+}
+
+.profit-summary-card.yamini-card {
+  border-top: 4px solid #2ecc71;
+  background: linear-gradient(
+    135deg,
+    rgba(46, 204, 113, 0.05) 0%,
+    rgba(46, 204, 113, 0.02) 100%
+  );
+}
+
+.profit-summary-card .card-header {
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.profit-summary-card.yamini-card .card-header {
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+}
+
+.profit-summary-card .card-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.profit-summary-card .card-content {
+  padding: 20px;
+}
+
+.profit-summary-card .summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.profit-summary-card .summary-row.total-row {
+  border-bottom: none;
+  border-top: 2px solid #3b82f6;
+  padding-top: 16px;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.profit-summary-card.yamini-card .summary-row.total-row {
+  border-top: 2px solid #2ecc71;
+}
+
+.profit-summary-card .label {
+  color: #666;
+  font-weight: 500;
+}
+
+.profit-summary-card .value {
+  color: #333;
+  font-family: "Courier New", monospace;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.profit-summary-card .value.total {
+  color: #3b82f6;
+  font-size: 1.3rem;
+}
+
+.profit-summary-card.yamini-card .value.total {
+  color: #2ecc71;
+}
+
+.profit-calculation-breakdown {
+  background: #f9f9f9;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.profit-calculation-breakdown h4 {
+  margin: 0 0 16px 0;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.calculation-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.calc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: white;
+  border-radius: 4px;
+}
+
+.calc-item .label {
+  color: #666;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.calc-item .value {
+  color: #333;
+  font-family: "Courier New", monospace;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.calc-item.divider {
+  background: linear-gradient(90deg, #f0f0f0 0%, #e8e8e8 100%);
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  margin: 8px 0;
+}
+
+.calc-item.divider .value {
+  color: #3b82f6;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.calc-item.final {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.calc-item.final .label {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.calc-item.final .value {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .profit-summary-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .profit-summary-card .card-header h3 {
+    font-size: 1rem;
+  }
+
+  .profit-summary-card .summary-row {
+    padding: 10px 0;
+  }
+
+  .calc-item {
+    padding: 8px 10px;
+  }
+
+  .calc-item .label {
+    font-size: 0.85rem;
+  }
+}

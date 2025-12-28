@@ -1,0 +1,1581 @@
+{
+  "panelists": [
+    {
+      "id": "1",
+      "name": "Harisha",
+      "email": "harisha@example.com",
+      "phone": "9160011711",
+      "linkedin": "",
+      "status": "inactive",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Keerthi",
+      "email": "Keerthisohana61@gmail.com",
+      "phone": "6303811927",
+      "linkedin": "https://www.linkedin.com/in/keerthi-sohana-atluri/",
+      "status": "active",
+      "interviewTypes": [
+        "SDE1",
+        "SDE2",
+        "NET"
+      ],
+      "paymentRates": {
+        "SDE1": 300,
+        "SDE2": 450,
+        "NET": 300
+      },
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "name": "Praveena",
+      "email": "praveena.in1234@gmail.com",
+      "phone": "8374559583",
+      "linkedin": "https://www.linkedin.com/in/praveena-atluri/",
+      "status": "active",
+      "interviewTypes": [
+        "SDE1",
+        "NET",
+        "SDE2"
+      ],
+      "paymentRates": {
+        "SDE1": 300,
+        "SDE2": 450,
+        "NET": 300
+      },
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "name": "K Lakshmi Narayana",
+      "email": "kln29dec@gmail.com",
+      "phone": "9090509010",
+      "linkedin": "https://www.linkedin.com/in/k-lakshmi-narayana-54a504231?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "status": "standby",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "name": "Sanchit Bajaj",
+      "email": "sanchit@example.com",
+      "phone": "9810330951",
+      "linkedin": "https://www.linkedin.com/in/bajajsanchit/",
+      "status": "standby",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "name": "Vedashree Gadekar",
+      "email": "vedashreegadekar@gmail.com",
+      "phone": "7448187060",
+      "linkedin": "https://www.linkedin.com/in/vedashree-gadekar-b182b6218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "status": "standby",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "7",
+      "name": "Ankush Kumar",
+      "email": "ankush@example.com",
+      "phone": "9123571823",
+      "linkedin": "https://www.linkedin.com/in/ankush-kumar-sde?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "status": "standby",
+      "interviewTypes": [],
+      "paymentRates": {},
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "8",
+      "name": "Naveen kumar Bisai",
+      "email": "naveenkumarbisai@gmail.com",
+      "phone": "8374812006",
+      "linkedin": "https://in.linkedin.com/in/naveen-kumar-bisai-1b46bb103",
+      "status": "active",
+      "interviewTypes": [
+        "NET"
+      ],
+      "paymentRates": {
+        "NET": 300
+      },
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "9",
+      "name": "Akriti Shukla",
+      "email": "akritishukla00@gmail.com",
+      "phone": "8827821159",
+      "linkedin": "https://www.linkedin.com/in/akriti-shukla11",
+      "status": "active",
+      "interviewTypes": [
+        "NET"
+      ],
+      "paymentRates": {
+        "NET": 300
+      },
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "10",
+      "name": "Disha",
+      "email": "dishajindgar24@gmail.com",
+      "phone": "9888672023",
+      "linkedin": "https://www.linkedin.com/in/dishajindgar",
+      "status": "active",
+      "interviewTypes": [
+        "NET",
+        "NET-2"
+      ],
+      "paymentRates": {
+        "NET": 350,
+        "NET-2": 350
+      },
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "11",
+      "name": "Rithvik",
+      "email": "klsrithvik20@gmail.com",
+      "phone": "9573582328",
+      "linkedin": "https://www.linkedin.com/in/rithvik-kanna-192baa185?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "status": "active",
+      "interviewTypes": [
+        "SDE2",
+        "SDE1",
+        "NET"
+      ],
+      "paymentRates": {
+        "SDE1": 300,
+        "SDE2": 450,
+        "NET": 300
+      },
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "1766908282012",
+      "name": "Pavani Bandi",
+      "email": "pavanishiny@gmail.com",
+      "phone": "9703830736",
+      "linkedin": "https://www.linkedin.com/in/pavanibandi/",
+      "status": "active",
+      "paymentRates": {
+        "SDE1": 600,
+        "SDE2": 900,
+        "NET": 600,
+        "NET-2": 600,
+        "Frontend": 1080
+      },
+      "interviewTypes": [
+        "SDE1",
+        "SDE2",
+        "NET",
+        "NET-2",
+        "Frontend"
+      ],
+      "createdAt": "2025-12-28T07:51:22.012Z"
+    },
+    {
+      "id": "1766908303939",
+      "name": "Yamini Bandi",
+      "email": "sweetybandi@gmail.com",
+      "phone": "8106951958",
+      "linkedin": "https://www.linkedin.com/in/yaminibandi/",
+      "status": "active",
+      "paymentRates": {
+        "SDE1": 600,
+        "SDE2": 900,
+        "NET": 600
+      },
+      "interviewTypes": [
+        "SDE1",
+        "SDE2",
+        "NET"
+      ],
+      "createdAt": "2025-12-28T07:51:43.939Z"
+    },
+    {
+      "id": "1766917516047",
+      "name": "Tarun Meka",
+      "email": "tarun.in0987@gmail.com",
+      "phone": "",
+      "linkedin": "",
+      "status": "active",
+      "paymentRates": {
+        "SDE1": 300,
+        "SDE2": 450
+      },
+      "interviewTypes": [
+        "SDE1",
+        "SDE2"
+      ],
+      "createdAt": "2025-12-28T10:25:16.047Z"
+    },
+    {
+      "id": "1766917537900",
+      "name": "Vasavi M R",
+      "email": "vasaviram06@gmail.com",
+      "phone": "",
+      "linkedin": "",
+      "status": "active",
+      "paymentRates": {
+        "SDE1": 300,
+        "SDE2": 450
+      },
+      "interviewTypes": [
+        "SDE1",
+        "SDE2"
+      ],
+      "createdAt": "2025-12-28T10:25:37.900Z"
+    },
+    {
+      "id": "1766917556126",
+      "name": "Anuragh Yarlagadda",
+      "email": "anuraghyarlagadda@gmail.com",
+      "phone": "",
+      "linkedin": "",
+      "status": "active",
+      "paymentRates": {
+        "SDE1": 300,
+        "SDE2": 450
+      },
+      "interviewTypes": [
+        "SDE1",
+        "SDE2"
+      ],
+      "createdAt": "2025-12-28T10:25:56.126Z"
+    }
+  ],
+  "interviews": [
+    {
+      "id": "e99f3558-0933-4007-be9a-6237ec5bbdac",
+      "panelistId": "3",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "b6c8ef1c-df48-4df2-9dfb-818f1032fe8e",
+      "panelistId": "3",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "c9323551-f738-4550-99bf-b429d8c5ae3e",
+      "panelistId": "3",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "15c6906f-f75d-4ca9-b04b-85d5889ff716",
+      "panelistId": "3",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "92614836-83f5-4d9e-a83f-84badafb1f75",
+      "panelistId": "3",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "ff65dbbd-a693-43c5-a10f-a0f290dad63b",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "858f7a37-4e9f-44d0-95b3-27ab6eb59512",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "ed3376a3-9272-47ad-808f-cea8f549f063",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "9ddcf291-478d-4d1f-ad42-7b05bfabbe87",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "033d67fe-1a01-46d1-a6dd-8d4dce70602c",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "1eb7ef54-a95d-42db-8a39-90e88b67a52a",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "43b899be-5b80-49e6-812c-24087af1faad",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "f91ee36d-1bc4-4d7b-b8a8-8be71757aaf8",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "daeed487-57fc-4f7d-b38d-3fbe502fbf20",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "e70eceb9-ae8b-4150-9d12-a9345f6d176c",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "9bb2cb3d-3019-45b7-bf00-2ce66ae32819",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "abc372e9-e83a-47c4-a07f-9724fdb93a9d",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "34304b7e-30bf-4ff5-aa85-d62cc04746e1",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "9ed14222-0dbb-4186-b0ba-4f0ba3d9927f",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "34f9a628-0db9-4c46-a915-51f68e960d93",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "13c21871-7874-4d7d-941a-af826a2a2025",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "11b57563-6a76-47a9-b363-88944ce9bb46",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "876852dd-640e-4e15-87d8-14a894165754",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "85916823-862b-4d00-b867-ab3d8f36aaaf",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "238c4ad5-cf83-47b2-a13a-e575ac949e16",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "20696540-362d-48a7-a80a-24f28fb2df90",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "df99127a-2447-4e7e-8bc2-19968e8565c7",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "55d92f31-bff3-4199-bf0b-a96ad221ce6e",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "c9d1de6e-3900-4373-8ccc-e4cc550ad088",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "69acb0a9-9ba9-4ba5-a0ae-3b5f02635706",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "6f800d8d-6382-4294-af41-35598e58b2bb",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "c7852868-1d45-4295-8f74-ef6f11959410",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "c9159087-3c90-47b8-ae18-98881ff5c114",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "f813d842-17bb-4fca-962a-459ec1d89f4b",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "abb35676-50ac-4b6d-ba29-35d80be4e62f",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "98cf1ea3-ad5e-4d07-911d-23a3ad55babb",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "bb60a64f-1959-4b5c-90b5-de013c4253a4",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "36be0a9a-d9f6-41ec-9c3d-5f29b4b91414",
+      "panelistId": "11",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "71772e5e-a328-4044-b56c-b06985c06ec2",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "b15e20c2-e2db-482b-8729-6ef191f53c57",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "5d83778c-01b9-456a-876d-53c58a080774",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "1afa6dbf-c8d0-436c-9587-4cab89dac86f",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "939a194f-2ed9-4e19-bccd-8a614a226adf",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "2784b49e-082a-4915-8573-ad9bb198a1b4",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "3eda04be-546a-48d4-af20-602a3509c921",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "d42cd2e7-6c40-426c-8fbd-bd4c13cd0a0b",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "c95caad2-e2ec-446a-82b6-1d233011e922",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "98f1ba0e-3081-4b66-8516-ba1ce1ea9137",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "18c65fbc-e8e8-4997-8b8f-300d7da6ccf9",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "c3aadfdd-be75-484d-b6c5-e96a313860a7",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "1243c159-dd52-4d78-b99d-f64655fc8ed3",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "0e31c641-889e-4046-a4e3-69dcb7749fca",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "a7b6a8b8-1e84-4065-a404-5a96a13ad866",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "377abcb5-5a28-45df-aabc-f1136611d402",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "2684ec70-3230-4508-aab2-bc8b5f5dcfbd",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "a685da77-8870-489a-90cb-9961a61f4b11",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "bed3ecbc-bf91-42f3-a091-2ee225dc0c80",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "b70704f2-a8a9-44dc-b7d5-f9a3ecc94e08",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "732e0b28-6e2a-48c6-b5ad-54f0728a0c82",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "3f1cb35d-9be1-4412-b194-8c88002e19ad",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "3d7dcce7-2aa4-475c-9af2-b265be204d92",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "dbdf79ee-c538-4b5b-a650-9ab3fadd1020",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "6540b718-0ec3-4f19-a3f4-dee5e8d20c9e",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "4259ab41-0d92-481b-bc66-346e6a1286e1",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "025c199f-8e27-4740-bfa2-077732a9455a",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "418fd0b4-39b9-4432-bd7d-9c2336b82c3e",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "0254a404-ad6a-41b9-b8a7-4adccf8b8129",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "bbe26509-0754-4691-89af-e49178190235",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "0d8cc8b9-8f04-4496-b971-ee0bce0da2f1",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "8637f32b-267d-42c6-899f-862538a0ae54",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "4601c368-a675-4779-b237-1880cca661b2",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.307Z"
+    },
+    {
+      "id": "16546d19-e25a-48cc-a525-61674873947a",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "212cd6c6-59f3-4daa-b13a-f216415b0cf4",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "9c61f365-b495-4049-a287-4603f0faf556",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "aa6a0eb0-41dd-41af-9a7a-ff3985af1d1f",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "02afaf5e-4f10-41b5-9390-63c4f0c254d2",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "92420f05-f2c2-41b7-9ebc-512ac6f32078",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "03309254-8f5c-4e60-a5d2-25820ea0bd3d",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "8cfc953b-3d2b-4572-a94b-412960eb51d0",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "607347dd-a8c4-4587-bba9-8f3f59b4e0c7",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "054cbf66-660f-4faf-aad6-e4b4011b6c43",
+      "panelistId": "1766908282012",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "84cc9f2f-b14f-4bd7-b7c8-b45f349300ad",
+      "panelistId": "1766908303939",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "61330adf-4b33-43b3-837f-452d90f88311",
+      "panelistId": "1766908303939",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "f61185ea-e306-4e40-b858-66247cfa58fe",
+      "panelistId": "1766908303939",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "4a1addfc-507d-4d32-9fbe-7f3f350d7ae5",
+      "panelistId": "1766917556126",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "f8da2ce3-ee92-41fc-83ff-77b111c72a3f",
+      "panelistId": "1766917556126",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "e089a38c-fdf5-471d-a180-94fb63e12665",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "f2af399c-a607-4683-a5f9-29fbef064673",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "6778ae20-1828-40ea-8154-98cc0e8fa843",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "38848778-5dc4-44ee-8d59-a180b852c86e",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "6ae3bbed-0b72-4159-9019-bdd426e18761",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "ad50a03e-1fad-4377-9e4d-860cf5cbfe46",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "b549b6b0-6e5d-4191-b2b5-c18c5d09df96",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "94466c0b-ace4-4716-9210-d44d3b182c7d",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "0903a10a-a553-4737-9da7-e2e7d9e6994d",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "08ff873a-03bb-4e8f-ab2d-5121b0d669b9",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "1f60476b-53a5-4449-b12c-5648221acf47",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "a17e6182-e363-42bf-8e88-d68a315d69d3",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "66b18c4d-5559-4b50-848b-744a8e2675d2",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "c92d789a-9dd5-4917-b57f-53122a7c905f",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "c12a040a-2d4b-4a4a-96d6-f35571774173",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "cca30bf3-5c3a-43ea-bf96-42cc02e0c5bc",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "25984c56-145b-454c-85d6-58bfbcb94803",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "0e2e908b-8791-403f-a321-828f347be33d",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "268a5738-4807-454e-884e-998add494f62",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "52bcf83e-61ee-4965-88b2-65bc523fbcec",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "c0063402-57de-44ba-a4fe-dfdf0e354c1b",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "1167cc3a-16d3-4a1d-b7d7-ce2d4e05868b",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "de6d935d-070c-4edb-ba21-e8cc9e08feea",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "4ae046ad-9364-447c-bd34-3f63d3a82fdc",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "09d4ead5-399c-4236-89eb-8de3bace9152",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "a209520c-1276-4f42-8e21-0f9f7890d669",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "30a6be42-f6c1-455b-b754-fed81c4a83fd",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "5db02f71-65bf-4069-8676-49ce7f5f5e5c",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "54a4dd54-cd14-4428-b24b-ff1b12df79f5",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "390250f1-c854-49f4-85df-f271b6b9f5ea",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "51b6805d-8119-48ed-a26b-79852575938f",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "c79aca2c-6602-4721-b22f-03155ca50381",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "736285d0-f791-4e9c-8311-55fae53f2247",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "cfd85260-a086-4e01-8a57-189d729f696d",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "43f3b39c-44e0-4b33-aece-a7c16da4346a",
+      "panelistId": "1766917516047",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "0d16fb94-fee5-4d2c-89c9-d79869df4673",
+      "panelistId": "1766917537900",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "3218081b-b2b2-4af5-9fb5-b651820e5693",
+      "panelistId": "1766917537900",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "edbe9d09-ae9f-4e63-ab87-0b5283ceec45",
+      "panelistId": "1766917537900",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "72fc16ec-8281-4212-961a-0bc59e22a387",
+      "panelistId": "1766917537900",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "e210978b-fd08-448b-8cc2-aeedf803e9fb",
+      "panelistId": "1766917537900",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "9a5fbc6f-fc97-4e53-bf80-1a195570fd85",
+      "panelistId": "1766917537900",
+      "type": "SDE1",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:26:42.308Z"
+    },
+    {
+      "id": "7c2bbefc-c264-46f9-b7d6-ccd3bba985aa",
+      "panelistId": "11",
+      "type": "SDE2",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:27:01.938Z"
+    },
+    {
+      "id": "a6294d93-5d1e-4ff0-a943-a8a2056b21f1",
+      "panelistId": "1766908282012",
+      "type": "SDE2",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:27:01.938Z"
+    },
+    {
+      "id": "efb3c4bc-97e6-485f-8a36-559c806b9dd7",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.520Z"
+    },
+    {
+      "id": "b674788b-9ee7-4919-8f99-5a24284b2411",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.520Z"
+    },
+    {
+      "id": "41b3bf8e-0dfa-46af-bc1c-f7ac44211300",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.520Z"
+    },
+    {
+      "id": "2e62e3d3-d4d7-4f49-b639-f5ec946b66ec",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.520Z"
+    },
+    {
+      "id": "d9c0023b-22ae-4798-8caa-3d7bfe4be10e",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.520Z"
+    },
+    {
+      "id": "7c1589d6-922a-43b4-842c-0781a484f2e5",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.520Z"
+    },
+    {
+      "id": "21d5c9df-1cb1-49e6-a6e6-5d949856a2b5",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.520Z"
+    },
+    {
+      "id": "ad4db515-4c83-4b37-a319-c09283efadb2",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.520Z"
+    },
+    {
+      "id": "7294dd25-3b79-4b57-a711-432cdf35af73",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.520Z"
+    },
+    {
+      "id": "d5a53291-4078-4ae3-b2e7-1135ea91c080",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.520Z"
+    },
+    {
+      "id": "8fafdd43-fb89-4010-a69b-6931517970d1",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "42a790c5-7aba-4707-9c92-926b18d7ce42",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "211e87ad-f7e3-47a6-94bd-07ab75de40d1",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "51835229-b350-4532-8d06-08b33fad4a0d",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "b001fb71-deae-480e-8df3-ce719f3bfa6a",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "771a2e15-6750-45f1-8c54-242774305834",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "e66dd255-e601-4f6b-9be9-9e75f8696a72",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "951e09d3-30df-41fe-a457-84dfb203526e",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "00a46a8e-32cd-4ab5-a57b-150b2f6da5d7",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "3ca1e7ca-14aa-4094-942a-36229e3067f3",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "af325460-617d-4927-b2ae-9a8bfbcf63a9",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "e0d3dbc5-8b36-4694-a103-cd182adcfc5f",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "d488e462-2076-4c42-a04e-1378b99147b1",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "79e66003-4744-4976-9e0f-120843cbd270",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "be7e2933-eabf-43a0-a215-3cb5d1c21cef",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "c3262010-b9ba-40d9-a4af-ddce81009346",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "67f6d89d-4b13-4d20-a7f3-50cb73100cea",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "34501184-f78f-40fd-affd-95c75e537d10",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "eeb5c003-581a-4b49-97d4-81a95a61dab3",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "5c07f0a8-ecdb-4edc-a2df-09b77527f211",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "65c463f3-1011-4da7-80c3-b0ad6676e692",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "0c950634-5870-4c56-a5b1-2bc02a7b6769",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "99164f91-0797-4083-8e76-5c7bc3c1517f",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "494b245d-ac2c-401b-8659-0e10e090bd19",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "df5418c8-1a16-41eb-9df1-4cbe8dc5175f",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "5dff3c52-ad49-4712-88c1-f5c4602548e3",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "abd83d30-bed5-4ddd-b0af-933da2692a49",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "f05082c3-b0d3-4d9e-bb47-b5a3e4842402",
+      "panelistId": "2",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "00d87bce-0732-4df9-a887-b2dbc6549486",
+      "panelistId": "3",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "7d7e35ce-cffb-4a99-a250-2958a9ecd749",
+      "panelistId": "3",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "916c397f-9731-4f64-9dea-40578dee4801",
+      "panelistId": "3",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "9244a5f8-fce4-44e5-b135-0a3f2005c83b",
+      "panelistId": "3",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "d6058c07-0aa2-4470-b390-fa0ba7921c13",
+      "panelistId": "3",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "10ab0619-0e6f-47bd-88e2-30ef0e1a9e17",
+      "panelistId": "3",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "cc80b2fc-a9a1-4579-ae16-0ed886e6969f",
+      "panelistId": "3",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "ff89eb6b-e806-4b4e-86b5-d656d1f3d3aa",
+      "panelistId": "3",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "b9ac9669-fc31-43c5-9637-91ac1e02cb3f",
+      "panelistId": "3",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "ff489485-96f4-4fc4-8cbf-67e92d0e6a67",
+      "panelistId": "3",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "0ff77f7e-d759-4d93-a04d-eedb83b80773",
+      "panelistId": "3",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "27035ec8-5e14-4ed7-bb79-1cced9261a49",
+      "panelistId": "3",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "a46ebdfe-a5c2-437b-ae5a-80eadecc561c",
+      "panelistId": "3",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.521Z"
+    },
+    {
+      "id": "411fae7b-520a-4790-8833-2725e7ca2662",
+      "panelistId": "1766908303939",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.522Z"
+    },
+    {
+      "id": "4e2c4d7f-87fb-4eba-9fd0-299ee4d15328",
+      "panelistId": "1766908303939",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.522Z"
+    },
+    {
+      "id": "ae12df56-45b1-4225-a244-2924cd746772",
+      "panelistId": "1766908303939",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.522Z"
+    },
+    {
+      "id": "93efc21b-1965-4e91-9b6b-7697415adf5d",
+      "panelistId": "1766908303939",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.522Z"
+    },
+    {
+      "id": "20e27480-b9cf-401a-9101-c919629e8777",
+      "panelistId": "1766908303939",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.522Z"
+    },
+    {
+      "id": "8484c172-6054-4b93-b81d-d55f42422d2a",
+      "panelistId": "1766908303939",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.522Z"
+    },
+    {
+      "id": "b3d11718-1058-42f9-bc95-3adaefe0ab4f",
+      "panelistId": "1766908303939",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.522Z"
+    },
+    {
+      "id": "f491e020-7741-4eef-80a9-75c99521c2c0",
+      "panelistId": "1766908303939",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.522Z"
+    },
+    {
+      "id": "6bdf21f0-4b08-43c7-b092-b0c7aa073818",
+      "panelistId": "1766908303939",
+      "type": "NET",
+      "date": "2025-11-01",
+      "createdAt": "2025-12-28T10:29:08.522Z"
+    }
+  ]
+}

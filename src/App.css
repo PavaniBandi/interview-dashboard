@@ -1,0 +1,147 @@
+.app {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  padding: 32px 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.app-title {
+  margin: 0 0 8px 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.app-subtitle {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.app-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.nav-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  background: transparent;
+  color: #666;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.nav-tab:hover {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.nav-tab.active {
+  color: #3b82f6;
+  background: #eff6ff;
+}
+
+.nav-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #3b82f6;
+  border-radius: 3px 3px 0 0;
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+}
+
+.nav-label {
+  font-size: 0.95rem;
+}
+
+.app-main {
+  padding: 0;
+  min-height: calc(100vh - 200px);
+}
+
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .app-subtitle {
+    font-size: 1rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .app-nav {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .nav-tab {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .nav-label {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .app {
+    background: #121212;
+  }
+
+  .app-nav {
+    background: #1a1a1a;
+    border-bottom-color: #333;
+  }
+
+  .nav-tab {
+    color: #ccc;
+  }
+
+  .nav-tab:hover {
+    background: #2a2a2a;
+    color: #fff;
+  }
+
+  .nav-tab.active {
+    color: #3b82f6;
+    background: #2a2a2a;
+  }
+}
