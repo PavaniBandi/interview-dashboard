@@ -1,9 +1,6 @@
 {
   "version": 2,
   "buildCommand": "npm install && cd server && npm install",
-  "env": {
-    "MONGODB_URI": "@mongodb_uri"
-  },
   "functions": {
     "api/**/*.js": {
       "runtime": "nodejs20.x"
