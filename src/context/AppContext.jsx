@@ -6,7 +6,11 @@ const AppContext = createContext();
 
 // For local development use http://localhost:5000
 // For Vercel deployment, API routes are at /api
-const API_URL = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' && window.location.hostname === 'localhost' ? "http://localhost:5000" : "/api");
+const API_URL =
+  import.meta.env.VITE_API_URL ||
+  (typeof window !== "undefined" && window.location.hostname === "localhost"
+    ? "http://localhost:5000"
+    : "/api");
 
 export const useApp = () => {
   const context = useContext(AppContext);
