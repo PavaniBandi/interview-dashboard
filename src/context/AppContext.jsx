@@ -31,8 +31,8 @@ export const AppProvider = ({ children }) => {
       try {
         setLoading(true);
         const [panelistsRes, interviewsRes] = await Promise.all([
-          fetch(`${API_URL}/api/panelists`),
-          fetch(`${API_URL}/api/interviews`),
+          fetch(`${API_URL}/panelists`),
+          fetch(`${API_URL}/interviews`),
         ]);
 
         if (!panelistsRes.ok || !interviewsRes.ok) {
@@ -59,7 +59,7 @@ export const AppProvider = ({ children }) => {
 
   const addPanelist = async (panelist) => {
     try {
-      const response = await fetch(`${API_URL}/api/panelists`, {
+      const response = await fetch(`${API_URL}/panelists`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(panelist),
@@ -78,7 +78,7 @@ export const AppProvider = ({ children }) => {
 
   const updatePanelist = async (id, updates) => {
     try {
-      const response = await fetch(`${API_URL}/api/panelists/${id}`, {
+      const response = await fetch(`${API_URL}/panelists/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updates),
@@ -96,7 +96,7 @@ export const AppProvider = ({ children }) => {
 
   const deletePanelist = async (id) => {
     try {
-      const response = await fetch(`${API_URL}/api/panelists/${id}`, {
+      const response = await fetch(`${API_URL}/panelists/${id}`, {
         method: "DELETE",
       });
 
@@ -126,7 +126,7 @@ export const AppProvider = ({ children }) => {
         count: 1,
       };
 
-      const response = await fetch(`${API_URL}/api/interviews`, {
+      const response = await fetch(`${API_URL}/interviews`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(interviewData),
@@ -169,7 +169,7 @@ export const AppProvider = ({ children }) => {
 
       const aggregatedInterviews = Array.from(interviewMap.values());
 
-      const response = await fetch(`${API_URL}/api/interviews/bulk`, {
+      const response = await fetch(`${API_URL}/interviews/bulk`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ interviews: aggregatedInterviews }),
@@ -188,7 +188,7 @@ export const AppProvider = ({ children }) => {
 
   const deleteInterview = async (id) => {
     try {
-      const response = await fetch(`${API_URL}/api/interviews/${id}`, {
+      const response = await fetch(`${API_URL}/interviews/${id}`, {
         method: "DELETE",
       });
 
@@ -203,7 +203,7 @@ export const AppProvider = ({ children }) => {
 
   const deleteInterviews = async (ids) => {
     try {
-      const response = await fetch(`${API_URL}/api/interviews/bulk-delete`, {
+      const response = await fetch(`${API_URL}/interviews/bulk-delete`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ids }),
