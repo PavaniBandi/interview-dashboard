@@ -1,9 +1,4 @@
 {
   "version": 2,
-  "buildCommand": "npm install && cd server && npm install",
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs20.x"
-    }
-  }
+  "buildCommand": "npm install && cd server && npm install"
 }
