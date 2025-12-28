@@ -47,8 +47,19 @@ export const AppProvider = ({ children }) => {
       } catch (error) {
         console.error("Error fetching data from MongoDB:", error);
         // Fallback to default data if API fails
-        setPanelists(defaultData.panelists);
-        setInterviews(defaultData.interviews);
+        // Normalize default data to match MongoDB schema (use _id)
+        const fallbackPanelists = (defaultData.panelists || []).map((p) => ({
+          ...p,
+          _id: p._id || p.id,
+        }));
+
+        const fallbackInterviews = (defaultData.interviews || []).map((i) => ({
+          ...i,
+          _id: i._id || i.id,
+        }));
+
+        setPanelists(fallbackPanelists);
+        setInterviews(fallbackInterviews);
       } finally {
         setLoading(false);
       }
