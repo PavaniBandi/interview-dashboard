@@ -9,7 +9,7 @@ import "./App.css";
 
 function AppContent() {
   const [activeTab, setActiveTab] = useState("panelists");
-  const { loading } = useApp();
+  const { loading, apiError } = useApp();
 
   const tabs = [
     { id: "panelists", label: "Panelists", icon: "👥" },
@@ -45,6 +45,12 @@ function AppContent() {
           <DataManagement />
         </div>
       </header>
+
+      {apiError && (
+        <div className="api-error-banner" style={{ background: "#ffe6e6", color: "#900", padding: "8px 12px", textAlign: "center" }}>
+          <strong>API Error:</strong> {apiError}. Ensure the backend is running and MONGODB_URI is set.
+        </div>
+      )}
 
       <nav className="app-nav">
         {tabs.map((tab) => (

@@ -1,6 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import * as XLSX from "xlsx";
-import defaultData from "../data/defaultData.json";
 
 const AppContext = createContext();
 
@@ -33,6 +32,7 @@ export const AppProvider = ({ children }) => {
   const [panelists, setPanelists] = useState([]);
   const [interviews, setInterviews] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [apiError, setApiError] = useState(null);
 
   // Fetch data from MongoDB via API on mount
   useEffect(() => {
@@ -55,42 +55,10 @@ export const AppProvider = ({ children }) => {
         setInterviews(interviewsData);
       } catch (error) {
         console.error("Error fetching data from MongoDB:", error);
-        // Fallback to default data if API fails
-        // Normalize default data to match MongoDB schema (use _id)
-        const fallbackPanelists = (defaultData.panelists || []).map((p) => ({
-          ...p,
-          _id: p._id || p.id,
-        }));
-
-        // Aggregate fallback interviews (defaultData contains individual records)
-        const rawInterviews = defaultData.interviews || [];
-        const interviewMap = new Map();
-
-        rawInterviews.forEach((it) => {
-          const date = new Date(it.date);
-          const year = date.getFullYear();
-          const month = date.getMonth() + 1;
-          const key = `${it.panelistId}|${it.type}|${year}|${month}`;
-
-          if (interviewMap.has(key)) {
-            interviewMap.get(key).count += 1;
-          } else {
-            interviewMap.set(key, {
-              _id: it._id || it.id || key,
-              panelistId: it.panelistId,
-              type: it.type,
-              year,
-              month,
-              count: 1,
-              createdAt: it.createdAt || new Date().toISOString(),
-            });
-          }
-        });
-
-        const fallbackInterviews = Array.from(interviewMap.values());
-
-        setPanelists(fallbackPanelists);
-        setInterviews(fallbackInterviews);
+        // Do NOT fall back to local file. Surface the error and set empty data.
+        setApiError(error.message || "Failed to fetch data from server");
+        setPanelists([]);
+        setInterviews([]);
       } finally {
         setLoading(false);
       }
@@ -362,6 +330,7 @@ export const AppProvider = ({ children }) => {
     panelists,
     interviews,
     loading,
+    apiError,
     addPanelist,
     updatePanelist,
     deletePanelist,
