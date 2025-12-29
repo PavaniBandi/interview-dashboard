@@ -12,6 +12,15 @@ const API_URL =
     ? "http://localhost:5000"
     : "/api");
 
+// Helper to build correct API endpoints for local vs production
+// - In production API_URL will be '/api' (Vercel serverless functions)
+// - In local dev API_URL is 'http://localhost:5000'
+const buildApi = (path) => {
+  // path should start with '/'
+  if (API_URL === "/api") return `${API_URL}${path}`;
+  return `${API_URL}/api${path}`;
+};
+
 export const useApp = () => {
   const context = useContext(AppContext);
   if (!context) {
@@ -31,8 +40,8 @@ export const AppProvider = ({ children }) => {
       try {
         setLoading(true);
         const [panelistsRes, interviewsRes] = await Promise.all([
-          fetch(`${API_URL}/panelists`),
-          fetch(`${API_URL}/interviews`),
+          fetch(buildApi("/panelists")),
+          fetch(buildApi("/interviews")),
         ]);
 
         if (!panelistsRes.ok || !interviewsRes.ok) {
@@ -53,10 +62,32 @@ export const AppProvider = ({ children }) => {
           _id: p._id || p.id,
         }));
 
-        const fallbackInterviews = (defaultData.interviews || []).map((i) => ({
-          ...i,
-          _id: i._id || i.id,
-        }));
+        // Aggregate fallback interviews (defaultData contains individual records)
+        const rawInterviews = defaultData.interviews || [];
+        const interviewMap = new Map();
+
+        rawInterviews.forEach((it) => {
+          const date = new Date(it.date);
+          const year = date.getFullYear();
+          const month = date.getMonth() + 1;
+          const key = `${it.panelistId}|${it.type}|${year}|${month}`;
+
+          if (interviewMap.has(key)) {
+            interviewMap.get(key).count += 1;
+          } else {
+            interviewMap.set(key, {
+              _id: it._id || it.id || key,
+              panelistId: it.panelistId,
+              type: it.type,
+              year,
+              month,
+              count: 1,
+              createdAt: it.createdAt || new Date().toISOString(),
+            });
+          }
+        });
+
+        const fallbackInterviews = Array.from(interviewMap.values());
 
         setPanelists(fallbackPanelists);
         setInterviews(fallbackInterviews);
@@ -70,7 +101,7 @@ export const AppProvider = ({ children }) => {
 
   const addPanelist = async (panelist) => {
     try {
-      const response = await fetch(`${API_URL}/panelists`, {
+      const response = await fetch(buildApi("/panelists"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(panelist),
@@ -89,7 +120,7 @@ export const AppProvider = ({ children }) => {
 
   const updatePanelist = async (id, updates) => {
     try {
-      const response = await fetch(`${API_URL}/panelists/${id}`, {
+      const response = await fetch(buildApi(`/panelists/${id}`), {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updates),
@@ -107,7 +138,7 @@ export const AppProvider = ({ children }) => {
 
   const deletePanelist = async (id) => {
     try {
-      const response = await fetch(`${API_URL}/panelists/${id}`, {
+      const response = await fetch(buildApi(`/panelists/${id}`), {
         method: "DELETE",
       });
 
@@ -137,7 +168,7 @@ export const AppProvider = ({ children }) => {
         count: 1,
       };
 
-      const response = await fetch(`${API_URL}/interviews`, {
+      const response = await fetch(buildApi("/interviews"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(interviewData),
@@ -180,7 +211,7 @@ export const AppProvider = ({ children }) => {
 
       const aggregatedInterviews = Array.from(interviewMap.values());
 
-      const response = await fetch(`${API_URL}/interviews/bulk`, {
+      const response = await fetch(buildApi("/interviews/bulk"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ interviews: aggregatedInterviews }),
@@ -199,7 +230,7 @@ export const AppProvider = ({ children }) => {
 
   const deleteInterview = async (id) => {
     try {
-      const response = await fetch(`${API_URL}/interviews/${id}`, {
+      const response = await fetch(buildApi(`/interviews/${id}`), {
         method: "DELETE",
       });
 
@@ -214,7 +245,7 @@ export const AppProvider = ({ children }) => {
 
   const deleteInterviews = async (ids) => {
     try {
-      const response = await fetch(`${API_URL}/interviews/bulk-delete`, {
+      const response = await fetch(buildApi("/interviews/bulk-delete"), {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ids }),
