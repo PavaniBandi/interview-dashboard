@@ -22,14 +22,15 @@ export default async (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
     "Access-Control-Allow-Methods",
-    "GET,OPTIONS,PATCH,DELETE,POST,PUT"
+    "GET,OPTIONS,PATCH,DELETE,POST,PUT,HEAD"
   );
   res.setHeader(
     "Access-Control-Allow-Headers",
     "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
   );
 
-  if (req.method === "OPTIONS") {
+  // Handle OPTIONS and HEAD requests
+  if (req.method === "OPTIONS" || req.method === "HEAD") {
     res.status(200).end();
     return;
   }
@@ -51,6 +52,7 @@ export default async (req, res) => {
         return res.status(404).json({ error: "Panelist not found" });
       res.status(200).json({ message: "Panelist deleted successfully" });
     } else {
+      res.setHeader("Allow", "PUT, DELETE, HEAD, OPTIONS");
       res.status(405).json({ error: "Method not allowed" });
     }
   } catch (error) {

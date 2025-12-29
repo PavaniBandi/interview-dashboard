@@ -13,7 +13,8 @@ export default async (req, res) => {
 
   setCORS(res);
 
-  if (req.method === "OPTIONS") {
+  // Handle OPTIONS and HEAD requests
+  if (req.method === "OPTIONS" || req.method === "HEAD") {
     res.status(200).end();
     return;
   }
@@ -27,6 +28,7 @@ export default async (req, res) => {
       await panelist.save();
       res.status(201).json(panelist);
     } else {
+      res.setHeader("Allow", "GET, POST, HEAD, OPTIONS");
       res.status(405).json({ error: "Method not allowed" });
     }
   } catch (error) {
