@@ -100,11 +100,12 @@ const InterviewTracker = () => {
 
     for (const [panelistId, count] of Object.entries(panelistCounts)) {
       if (count > 0) {
-        // Instead of creating multiple records, create one aggregated record
+        // Create aggregated record with count
         interviewsToAdd.push({
           panelistId,
           type: selectedType,
           date: dateStr,
+          count: count,
         });
         recordsCreated += count;
       }
@@ -137,10 +138,9 @@ const InterviewTracker = () => {
   const handleEditForMonthType = (year, month, type) => {
     // Find all interviews for this month and type
     const monthInterviews = interviews.filter((interview) => {
-      const interviewDate = new Date(interview.date);
       return (
-        interviewDate.getFullYear() === year &&
-        interviewDate.getMonth() + 1 === month &&
+        interview.year === year &&
+        interview.month === month &&
         interview.type === type
       );
     });

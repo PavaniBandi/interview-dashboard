@@ -156,6 +156,7 @@ export const AppProvider = ({ children }) => {
   const addInterviews = async (interviewList) => {
     try {
       // Aggregate interviews by panelistId, type, year, month
+      // Combine records if they have the same key
       const interviewMap = new Map();
       interviewList.forEach((i) => {
         const date = new Date(i.date);
@@ -163,21 +164,24 @@ export const AppProvider = ({ children }) => {
         const month = date.getMonth() + 1;
 
         const key = `${i.panelistId}|${i.type}|${year}|${month}`;
+        const countToAdd = i.count || 1; // Use provided count or default to 1
+
         if (interviewMap.has(key)) {
           const existing = interviewMap.get(key);
-          existing.count += 1;
+          existing.count += countToAdd;
         } else {
           interviewMap.set(key, {
             panelistId: i.panelistId,
             type: i.type,
             year,
             month,
-            count: 1,
+            count: countToAdd,
           });
         }
       });
 
       const aggregatedInterviews = Array.from(interviewMap.values());
+      console.log("Sending aggregated interviews:", aggregatedInterviews);
 
       const response = await fetch(buildApi("/interviews/bulk"), {
         method: "POST",
@@ -185,7 +189,10 @@ export const AppProvider = ({ children }) => {
         body: JSON.stringify({ interviews: aggregatedInterviews }),
       });
 
-      if (!response.ok) throw new Error("Failed to add interviews");
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Failed to add interviews");
+      }
 
       const newInterviews = await response.json();
       setInterviews((prev) => [...prev, ...newInterviews]);
@@ -213,13 +220,17 @@ export const AppProvider = ({ children }) => {
 
   const deleteInterviews = async (ids) => {
     try {
+      console.log("Deleting interview IDs:", ids);
       const response = await fetch(buildApi("/interviews/bulk-delete"), {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ids }),
       });
 
-      if (!response.ok) throw new Error("Failed to delete interviews");
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Failed to delete interviews");
+      }
 
       setInterviews(interviews.filter((i) => !ids.includes(i._id)));
     } catch (error) {
@@ -247,7 +258,6 @@ export const AppProvider = ({ children }) => {
       return total + rate * interview.count; // Multiply by count since each record is aggregated
     }, 0);
   };
-
 
   const exportPanelists = () => {
     // Prepare data for Excel - flatten panelist data for better spreadsheet format

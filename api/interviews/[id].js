@@ -38,6 +38,12 @@ export default async (req, res) => {
   try {
     const { id } = req.query;
 
+    // Reject special routes that should be handled by other files
+    if (id === "bulk" || id === "bulk-delete") {
+      res.setHeader("Allow", "DELETE, HEAD, OPTIONS");
+      return res.status(405).json({ error: "Method not allowed" });
+    }
+
     if (req.method === "DELETE") {
       const interview = await Interview.findByIdAndDelete(id);
       if (!interview)

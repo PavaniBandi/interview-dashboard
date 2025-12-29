@@ -38,18 +38,24 @@ export default async (req, res) => {
   try {
     if (req.method === "DELETE") {
       const { ids } = req.body;
-      if (!Array.isArray(ids)) {
+      if (!ids || !Array.isArray(ids)) {
         return res.status(400).json({ error: "ids must be an array" });
       }
+      if (ids.length === 0) {
+        return res.status(400).json({ error: "ids array cannot be empty" });
+      }
+
       const result = await Interview.deleteMany({ _id: { $in: ids } });
-      res
-        .status(200)
-        .json({ message: `Deleted ${result.deletedCount} interviews` });
+      res.status(200).json({
+        message: `Deleted ${result.deletedCount} interviews`,
+        deletedCount: result.deletedCount,
+      });
     } else {
       res.setHeader("Allow", "DELETE, HEAD, OPTIONS");
       res.status(405).json({ error: "Method not allowed" });
     }
   } catch (error) {
+    console.error("Error in bulk-delete:", error.message);
     res.status(400).json({ error: error.message });
   }
 };
