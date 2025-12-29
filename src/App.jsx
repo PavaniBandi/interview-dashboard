@@ -47,8 +47,17 @@ function AppContent() {
       </header>
 
       {apiError && (
-        <div className="api-error-banner" style={{ background: "#ffe6e6", color: "#900", padding: "8px 12px", textAlign: "center" }}>
-          <strong>API Error:</strong> {apiError}. Ensure the backend is running and MONGODB_URI is set.
+        <div
+          className="api-error-banner"
+          style={{
+            background: "#ffe6e6",
+            color: "#900",
+            padding: "8px 12px",
+            textAlign: "center",
+          }}
+        >
+          <strong>API Error:</strong> {apiError}. Ensure the backend is running
+          and MONGODB_URI is set.
         </div>
       )}
 

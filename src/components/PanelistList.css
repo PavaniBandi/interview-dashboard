@@ -1,3 +1,63 @@
+/* Mobile responsive improvements */
+@media (max-width: 600px) {
+  .panelist-list-container {
+    padding: 8px;
+    max-width: 100vw;
+  }
+  .list-header {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 16px;
+    gap: 8px;
+  }
+  .list-header h1 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+  }
+  .header-buttons {
+    flex-direction: column;
+    gap: 6px;
+    align-items: stretch;
+  }
+  .filters {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+    align-items: stretch;
+  }
+  .search-input,
+  .filter-select {
+    min-width: 0;
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 8px 8px;
+  }
+  .panelist-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .panelist-card {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+  .card-header h3 {
+    font-size: 1rem;
+  }
+  .btn-primary,
+  .btn-secondary,
+  .btn-edit,
+  .btn-delete {
+    font-size: 0.95rem;
+    padding: 8px 8px;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+  .card-actions {
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 8px;
+  }
+}
 .panelist-list-container {
   padding: 24px;
   max-width: 1400px;

@@ -248,31 +248,6 @@ export const AppProvider = ({ children }) => {
     }, 0);
   };
 
-  const exportData = (forDefaultData = false) => {
-    const data = {
-      panelists,
-      interviews,
-    };
-
-    // If exporting for defaultData.json, don't add exportedAt
-    if (!forDefaultData) {
-      data.exportedAt = new Date().toISOString();
-    }
-
-    const blob = new Blob([JSON.stringify(data, null, 2)], {
-      type: "application/json",
-    });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = forDefaultData
-      ? "defaultData.json"
-      : `interview-dashboard-${new Date().toISOString().split("T")[0]}.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  };
 
   const exportPanelists = () => {
     // Prepare data for Excel - flatten panelist data for better spreadsheet format
@@ -340,7 +315,6 @@ export const AppProvider = ({ children }) => {
     deleteInterviews,
     getInterviewsByMonth,
     calculatePayment,
-    exportData,
     exportPanelists,
     importData,
   };
