@@ -1,33 +1,17 @@
-import mongoose from "mongoose";
+import { connectDB, setCORS } from "../../api/db.js";
 import Panelist from "../../lib/models/Panelist.js";
 
-let isConnected = false;
-
-const connectDB = async () => {
-  if (isConnected) return;
-
-  try {
-    await mongoose.connect(process.env.MONGODB_URI);
-    isConnected = true;
-  } catch (error) {
-    console.error("Database connection error:", error);
-    throw error;
-  }
-};
-
 export default async (req, res) => {
-  await connectDB();
+  try {
+    await connectDB();
+  } catch (error) {
+    console.error("Failed to connect to database:", error);
+    return res
+      .status(500)
+      .json({ error: "Database connection failed: " + error.message });
+  }
 
-  res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET,OPTIONS,PATCH,DELETE,POST,PUT"
-  );
-  res.setHeader(
-    "Access-Control-Allow-Headers",
-    "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
-  );
+  setCORS(res);
 
   if (req.method === "OPTIONS") {
     res.status(200).end();
@@ -46,6 +30,7 @@ export default async (req, res) => {
       res.status(405).json({ error: "Method not allowed" });
     }
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    console.error("Error in panelists route:", error);
+    res.status(500).json({ error: error.message });
   }
 };
