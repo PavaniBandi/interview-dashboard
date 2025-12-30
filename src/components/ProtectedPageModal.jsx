@@ -1,6 +1,17 @@
 import { useState } from "react";
 import "./ProtectedPageModal.css";
 
+// Build API URL based on environment (local vs production)
+const buildApi = (path) => {
+  const API_URL =
+    typeof window !== "undefined" && window.location.hostname === "localhost"
+      ? "http://localhost:5000"
+      : "";
+  
+  if (API_URL === "") return `/api${path}`;
+  return `${API_URL}/api${path}`;
+};
+
 const ProtectedPageModal = ({ isOpen, pageName, onAccessGranted, onCancel }) => {
   const [code, setCode] = useState("");
   const [error, setError] = useState("");
@@ -13,7 +24,7 @@ const ProtectedPageModal = ({ isOpen, pageName, onAccessGranted, onCancel }) => 
 
     try {
       // Verify code with backend instead of client-side check
-      const response = await fetch("/api/verify-access", {
+      const response = await fetch(buildApi("/verify-access"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code }),
