@@ -101,16 +101,29 @@ app.post("/api/interviews/bulk", async (req, res) => {
       return res.status(400).json({ error: "interviews must be an array" });
     }
     if (interviews.length === 0) {
-      return res.status(400).json({ error: "interviews array cannot be empty" });
+      return res
+        .status(400)
+        .json({ error: "interviews array cannot be empty" });
     }
 
     // Validate required fields
     for (const interview of interviews) {
-      if (!interview.panelistId || !interview.type || !interview.year || !interview.month) {
-        return res.status(400).json({ error: "Each interview must have panelistId, type, year, and month" });
+      if (
+        !interview.panelistId ||
+        !interview.type ||
+        !interview.year ||
+        !interview.month
+      ) {
+        return res
+          .status(400)
+          .json({
+            error: "Each interview must have panelistId, type, year, and month",
+          });
       }
-      if (typeof interview.count !== 'number' || interview.count < 1) {
-        return res.status(400).json({ error: "Each interview must have a count >= 1" });
+      if (typeof interview.count !== "number" || interview.count < 1) {
+        return res
+          .status(400)
+          .json({ error: "Each interview must have a count >= 1" });
       }
     }
 
@@ -144,9 +157,9 @@ app.delete("/api/interviews/bulk-delete", async (req, res) => {
       return res.status(400).json({ error: "ids array cannot be empty" });
     }
     const result = await Interview.deleteMany({ _id: { $in: ids } });
-    res.json({ 
+    res.json({
       message: `Deleted ${result.deletedCount} interviews`,
-      deletedCount: result.deletedCount 
+      deletedCount: result.deletedCount,
     });
   } catch (error) {
     console.error("Error in bulk-delete:", error.message);
@@ -163,6 +176,32 @@ app.delete("/api/interviews/:id", async (req, res) => {
     res.json({ message: "Interview deleted successfully" });
   } catch (error) {
     res.status(500).json({ error: error.message });
+  }
+});
+
+// Access code verification endpoint
+app.post("/api/verify-access", (req, res) => {
+  try {
+    const { code } = req.body;
+    
+    // Verify against secret code stored in environment variable or hardcoded
+    // It's recommended to use environment variable for this
+    const SECRET_CODE = process.env.ACCESS_CODE || "0203";
+    
+    if (!code) {
+      return res.status(400).json({ valid: false, error: "Code is required" });
+    }
+    
+    const isValid = code === SECRET_CODE;
+    
+    if (isValid) {
+      res.json({ valid: true, message: "Access granted" });
+    } else {
+      // Don't reveal if code exists or not - just say it's invalid
+      res.status(401).json({ valid: false, error: "Invalid code" });
+    }
+  } catch (error) {
+    res.status(500).json({ valid: false, error: error.message });
   }
 });
 
