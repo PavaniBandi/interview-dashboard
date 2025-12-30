@@ -34,10 +34,7 @@ const ProfitReport = () => {
   const [selectedYear, setSelectedYear] = useState(previousYear);
   const [selectedMonth, setSelectedMonth] = useState(previousMonth);
 
-  const years = Array.from(
-    { length: 5 },
-    (_, i) => new Date().getFullYear() - i
-  );
+  const years = Array.from({ length: 3 }, (_, i) => 2025 + i);
   const months = [
     { value: 1, name: "January" },
     { value: 2, name: "February" },
