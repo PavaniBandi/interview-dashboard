@@ -114,11 +114,9 @@ app.post("/api/interviews/bulk", async (req, res) => {
         !interview.year ||
         !interview.month
       ) {
-        return res
-          .status(400)
-          .json({
-            error: "Each interview must have panelistId, type, year, and month",
-          });
+        return res.status(400).json({
+          error: "Each interview must have panelistId, type, year, and month",
+        });
       }
       if (typeof interview.count !== "number" || interview.count < 1) {
         return res
@@ -183,17 +181,23 @@ app.delete("/api/interviews/:id", async (req, res) => {
 app.post("/api/verify-access", (req, res) => {
   try {
     const { code } = req.body;
-    
-    // Verify against secret code stored in environment variable or hardcoded
-    // It's recommended to use environment variable for this
-    const SECRET_CODE = process.env.ACCESS_CODE || "0203";
-    
+
+    // Verify against secret code stored in environment variable
+    const SECRET_CODE = process.env.ACCESS_CODE;
+
+    if (!SECRET_CODE) {
+      return res.status(500).json({
+        valid: false,
+        error: "Server access code is not configured (set ACCESS_CODE)",
+      });
+    }
+
     if (!code) {
       return res.status(400).json({ valid: false, error: "Code is required" });
     }
-    
+
     const isValid = code === SECRET_CODE;
-    
+
     if (isValid) {
       res.json({ valid: true, message: "Access granted" });
     } else {

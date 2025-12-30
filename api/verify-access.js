@@ -21,7 +21,14 @@ export default async (req, res) => {
       const { code } = req.body;
 
       // Verify against secret code stored in environment variable
-      const SECRET_CODE = process.env.ACCESS_CODE || "0203";
+      const SECRET_CODE = process.env.ACCESS_CODE;
+
+      if (!SECRET_CODE) {
+        return res.status(500).json({
+          valid: false,
+          error: "Server access code is not configured (set ACCESS_CODE)",
+        });
+      }
 
       if (!code) {
         return res
@@ -35,9 +42,7 @@ export default async (req, res) => {
         res.json({ valid: true, message: "Access granted" });
       } else {
         // Don't reveal if code exists or not - just say it's invalid
-        res
-          .status(401)
-          .json({ valid: false, error: "Invalid code" });
+        res.status(401).json({ valid: false, error: "Invalid code" });
       }
     } else {
       res.setHeader("Allow", "POST, HEAD, OPTIONS");

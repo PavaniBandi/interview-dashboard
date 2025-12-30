@@ -7,12 +7,17 @@ const buildApi = (path) => {
     typeof window !== "undefined" && window.location.hostname === "localhost"
       ? "http://localhost:5000"
       : "";
-  
+
   if (API_URL === "") return `/api${path}`;
   return `${API_URL}/api${path}`;
 };
 
-const ProtectedPageModal = ({ isOpen, pageName, onAccessGranted, onCancel }) => {
+const ProtectedPageModal = ({
+  isOpen,
+  pageName,
+  onAccessGranted,
+  onCancel,
+}) => {
   const [code, setCode] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -72,8 +77,8 @@ const ProtectedPageModal = ({ isOpen, pageName, onAccessGranted, onCancel }) => 
 
         <div className="modal-body">
           <p>
-            This page (<strong>{pageName}</strong>) is protected. Please
-            enter the access code to continue.
+            This page (<strong>{pageName}</strong>) is protected. Please enter
+            the access code to continue.
           </p>
 
           <form onSubmit={handleSubmit}>

@@ -5,11 +5,19 @@ import InterviewTracker from "./components/InterviewTracker";
 import PaymentReport from "./components/PaymentReport";
 import ProfitReport from "./components/ProfitReport";
 import DataManagement from "./components/DataManagement";
+import ProtectedPageModal from "./components/ProtectedPageModal";
 import "./App.css";
 
 function AppContent() {
   const [activeTab, setActiveTab] = useState("panelists");
+  const [protectedModal, setProtectedModal] = useState({
+    isOpen: false,
+    page: null,
+    requestedPage: null,
+  });
   const { loading, apiError } = useApp();
+
+  const PROTECTED_PAGES = ["payments", "profit"];
 
   const tabs = [
     { id: "panelists", label: "Panelists", icon: "👥" },
@@ -17,6 +25,29 @@ function AppContent() {
     { id: "payments", label: "Payments", icon: "💰" },
     { id: "profit", label: "Profit Report", icon: "📊" },
   ];
+
+  const handleTabClick = (tabId) => {
+    if (PROTECTED_PAGES.includes(tabId)) {
+      setProtectedModal({
+        isOpen: true,
+        page: tabId,
+        requestedPage: tabId,
+      });
+    } else {
+      setActiveTab(tabId);
+    }
+  };
+
+  const handleAccessGranted = () => {
+    if (protectedModal.requestedPage) {
+      setActiveTab(protectedModal.requestedPage);
+    }
+    setProtectedModal({ isOpen: false, page: null, requestedPage: null });
+  };
+
+  const handleAccessDenied = () => {
+    setProtectedModal({ isOpen: false, page: null, requestedPage: null });
+  };
 
   if (loading) {
     return (
@@ -66,13 +97,22 @@ function AppContent() {
           <button
             key={tab.id}
             className={`nav-tab ${activeTab === tab.id ? "active" : ""}`}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => handleTabClick(tab.id)}
           >
             <span className="nav-icon">{tab.icon}</span>
             <span className="nav-label">{tab.label}</span>
           </button>
         ))}
       </nav>
+
+      <ProtectedPageModal
+        isOpen={protectedModal.isOpen}
+        pageName={
+          tabs.find((t) => t.id === protectedModal.page)?.label || "Page"
+        }
+        onAccessGranted={handleAccessGranted}
+        onCancel={handleAccessDenied}
+      />
 
       <main className="app-main">
         {activeTab === "panelists" && <PanelistList />}
